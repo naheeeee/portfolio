@@ -55,6 +55,9 @@
 html {
   scroll-behavior: smooth;
 }
+.wrap {
+  overflow: hidden;
+}
 header {
   background-color: white;
   border-top: 1px solid #eaeaea;
@@ -504,7 +507,7 @@ header .gnb li:hover:nth-of-type(4) a {
   z-index: -10;
 }
 #sec4 .sec4_con {
-  border: 1px solid lawngreen;
+  /* border: 1px solid lawngreen; */
   position: relative;
   display: flex;
   padding-top: 12%;
@@ -537,6 +540,7 @@ header .gnb li:hover:nth-of-type(4) a {
 }
 #sec4 .sec4_bigmain.on {
   display: block;
+  z-index: 1;
 }
 #sec4 .sec4_bigimg {
   /* border: 1px solid black; */
@@ -607,17 +611,6 @@ header .gnb li:hover:nth-of-type(4) a {
 }
 #sec4 .sec4_text:hover a::before {
   transform: translateY(-50%) rotate(180deg);
-  /* animation: more 0.5s; */
-}
-@keyframes more {
-  0% {
-    rotate: 0deg;
-    transform-origin: center;
-  }
-  100% {
-    rotate: 360deg;
-    transform-origin: center;
-  }
 }
 #sec4 .sec4_right {
   /* border: 1px solid salmon; */
@@ -780,6 +773,10 @@ footer p {
 }
 
 @media (max-width: 414px) {
+  .gotop {
+    right: 1rem;
+    bottom: 3rem;
+  }
   header .gnb ul {
     justify-content: center;
   }
@@ -789,7 +786,6 @@ footer p {
     font-size: 1.25rem;
   }
   .bubble1 {
-    border: 1px solid green;
     position: absolute;
     /* top: 50vh;
     left: 10vw;
@@ -820,8 +816,8 @@ footer p {
   }
   #sec1 .sec1_bigbubble2,
   #sec2 .sec2_work {
-    top: 80vw;
-    left: 45vw;
+    top: 88vw;
+    left: 38vw;
     width: 17vw;
     height: 17vw;
   }
@@ -831,8 +827,8 @@ footer p {
   #sec1 .sec1_bigbubble3,
   #sec2 .sec2_contact {
     position: absolute;
-    top: 40vw;
-    left: 70vw;
+    top: 47vw;
+    left: 55vw;
     width: 18vw;
     height: 18vw;
   }
@@ -965,7 +961,7 @@ footer p {
     font-family: var(--h);
     color: var(--m3);
     font-size: 5rem;
-    top: 4%;
+    top: 7%;
     left: 0;
     z-index: 100;
     /* text-shadow: -2px 0px white, 0px 2px white, 2px 0px white, 0px -2px white; */
@@ -1012,14 +1008,114 @@ footer p {
     flex-direction: column;
     position: absolute;
     left: 5%;
-    bottom: 2%;
+    bottom: 1.5%;
     align-items: center;
     width: 90%;
-    cursor: pointer;
   }
   #sec4 .sec4_text p,
   #sec4 .sec4_text a {
-    font-size: 0.75rem;
-    white-space: nowrap;
+    font-size: 1rem;
+  }
+  #sec4 .sec4_text p:nth-of-type(1) {
+    color: var(--m3);
+    font-size: 1.5rem;
+  }
+  #sec4 .sec4_text p:nth-of-type(2) {
+    padding-left: 0;
+  }
+  #sec4 .sec4_text a {
+    color: var(--m3);
+    position: absolute;
+    right: 50%;
+    top: 150%;
+    transform: translateX(50%);
+    border: 1px solid var(--m3);
+    background-color: white;
+    padding: 0.75rem 2rem 0.75rem 3.25rem;
+    border-radius: 50px;
+  }
+  #sec4 .sec4_text a::before {
+    /* border: 1px solid red; */
+    content: "";
+    background-image: url(./img/플러스_보라색.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left: 2rem;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    z-index: 10;
+    transition: 0.4s;
+  }
+  #sec4 .sec4_right {
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    padding-left: 0;
+  }
+  #sec4 .sec4_right > div {
+    display: flex;
+    padding-left: 0;
+  }
+  #sec4 .sec4_right > div > button {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding-bottom: 16%;
+  }
+  #sec4 .sec4_right > div > button > img {
+    border-radius: 10px;
+    width: 90%;
+    transition: 0.2s;
+  }
+  #sec5 h1 {
+    font-size: 5rem;
+    top: 4%;
+    left: 5%;
+  }
+  #sec5 .sec5_text {
+    padding-top: 100%;
+  }
+  #sec5 .sec5_introduce p {
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+  }
+  #sec5 .sec5_kakao > div,
+  #sec5 .sec5_slack > div {
+    /* border: 1px solid tan; */
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  #sec5 .sec5_kakao p,
+  #sec5 .sec5_slack p {
+    padding-left: 0.5rem;
+    font-size: 0.85rem;
+  }
+  #sec5 .sec5_back {
+    position: absolute;
+    /* border: 1px solid lightblue; */
+    width: 100%;
+    left: 0;
+    bottom: 5vh;
+    height: 0;
+    overflow: hidden;
+    padding-top: 5%;
+    border-bottom: 1px solid #eaeaea;
+  }
+  footer {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 0;
+    top: calc(100% - 5vh);
+    height: 4.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
