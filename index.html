@@ -35,6 +35,8 @@
       </div>
       <div class="bubble3">
         <img src="./img/인물_비눗방울건_큰비눗방울4_cf.png" alt="비눗방울3" />
+        <div class="shape"></div>
+        <div class="shape"></div>
       </div>
     </div>
     <div class="gotop">
@@ -91,8 +93,6 @@
       </section>
       <div class="output">
         <section id="sec2" class="sec">
-          <!-- sec3으로 넘어갈 때 여자+작은비눗방울은 자리고정된 상태로
-        sec3만 올라오고 / /큰비눗방울은 하나로 몽글몽글 뭉쳐서 sec3의 사진 앞으로 (보라색, 초록색은 opacity 0)-->
           <h1 hidden>메인화면</h1>
           <div class="sec2_girl"><img src="./img/sec2.png" alt="여자" /></div>
           <div class="sec2_bubble">
@@ -167,48 +167,64 @@
                   <p>Skill</p>
                   <ul class="sec3_detail">
                     <li>
-                      <div><img src="./img/포토샵로고.png" alt="포토샵" /></div>
-                      <p>photoshop</p>
-                      <p>
-                        상황에 맞는 툴을 활용하여<br />
-                        이미지 편집 및 제작 가능
-                      </p>
+                      <div class="sec3_tool">
+                        <img src="./img/포토샵로고.png" alt="포토샵" />
+                      </div>
+                      <div class="sec3_tooldetail">
+                        <p>photoshop</p>
+                        <p>
+                          상황에 맞는 툴을 활용하여<br />
+                          이미지 편집 및 제작 가능
+                        </p>
+                      </div>
                     </li>
                     <li>
-                      <div>
+                      <div class="sec3_tool">
                         <img src="./img/일러스트로고.png" alt="일러스트" />
                       </div>
-                      <p>illustrator</p>
-                      <p>
-                        기본적인 툴을 활용하여<br />
-                        이미지 편집 및 제작 가능
-                      </p>
+                      <div class="sec3_tooldetail">
+                        <p>illustrator</p>
+                        <p>
+                          기본적인 툴을 활용하여<br />
+                          이미지 편집 및 제작 가능
+                        </p>
+                      </div>
                     </li>
                     <li>
-                      <div><img src="./img/html로고.png" alt="html" /></div>
-                      <p>html</p>
-                      <p>
-                        웹 표준과 웹 접근성을<br />
-                        고려한 퍼블리싱
-                      </p>
+                      <div class="sec3_tool">
+                        <img src="./img/html로고.png" alt="html" />
+                      </div>
+                      <div class="sec3_tooldetail">
+                        <p>html</p>
+                        <p>
+                          웹 표준과 웹 접근성을<br />
+                          고려한 퍼블리싱
+                        </p>
+                      </div>
                     </li>
                     <li>
-                      <div><img src="./img/css로고.png" alt="css" /></div>
-                      <p>css</p>
-                      <p>
-                        구조와 속성을 이해하고<br />
-                        원하는 스타일로 코드 구현
-                      </p>
+                      <div class="sec3_tool">
+                        <img src="./img/css로고.png" alt="css" />
+                      </div>
+                      <div class="sec3_tooldetail">
+                        <p>css</p>
+                        <p>
+                          구조와 속성을 이해하고<br />
+                          원하는 스타일로 코드 구현
+                        </p>
+                      </div>
                     </li>
                     <li>
-                      <div>
+                      <div class="sec3_tool">
                         <img src="./img/자바스크립트 로고.png" alt="jsjquery" />
                       </div>
-                      <p>js & jquery</p>
-                      <p>
-                        기본 문법을 이해하고<br />
-                        간단한 이벤트 기능구현
-                      </p>
+                      <div class="sec3_tooldetail">
+                        <p>js & jquery</p>
+                        <p>
+                          기본 문법을 이해하고<br />
+                          간단한 이벤트 기능구현
+                        </p>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -223,6 +239,10 @@
               <li class="sec4_bigmain on">
                 <div class="sec4_bigimg">
                   <img src="./img/카페띠아모메인.png" alt="카페띠아모" />
+                  <img
+                    src="./img/카페띠아모_전체메인화면.png"
+                    alt="카페띠아모"
+                  />
                 </div>
                 <div class="sec4_text">
                   <p>01</p>
@@ -233,6 +253,7 @@
               <li class="sec4_bigmain">
                 <div class="sec4_bigimg">
                   <img src="./img/오라면메인.png" alt="오늘의라면" />
+                  <img src="./img/오라면_전체화면.png" alt="오늘의라면" />
                 </div>
                 <div class="sec4_text">
                   <p>02</p>
@@ -243,6 +264,7 @@
               <li class="sec4_bigmain">
                 <div class="sec4_bigimg">
                   <img src="./img/포시즌스메인.png" alt="포시즌스서울" />
+                  <img src="./img/포시즌스_전체화면.png" alt="포시즌스서울" />
                 </div>
                 <div class="sec4_text">
                   <p>03</p>
