@@ -28,16 +28,12 @@
         </nav>
       </header>
       <div class="moveBubble">
-        <div class="bubble1">
-          <img src="./img/인물_비눗방울건_큰비눗방울1_cf.png" alt="비눗방울1" />
-        </div>
-        <div class="bubble2">
-          <img src="./img/인물_비눗방울건_큰비눗방울2_cf.png" alt="비눗방울2" />
-        </div>
+        <div class="bubble1 shape"></div>
+        <div class="bubble2 shape"></div>
         <div class="bubble3">
-          <img src="./img/인물_비눗방울건_큰비눗방울4_cf.png" alt="비눗방울3" />
-          <div class="shape"></div>
-          <div class="shape"></div>
+          <div class="bubble3_first shape"></div>
+          <div class="bubble3_second shape"></div>
+          <div class="bubble3_second shape"></div>
         </div>
       </div>
       <div class="gotop">
@@ -45,284 +41,717 @@
         <i class="fa-solid fa-angle-up"></i>
         <a href="#sec2"></a>
       </div>
-      <div>
-        <section id="sec1" class="sec">
-          <!-- 화면생성후 5초 뒤에 sec2로 넘어감 -->
-          <h1 hidden>메인화면</h1>
-          <div class="sec1_girl">
-            <img src="./img/sec1_여자만.png" alt="여자" />
+      <!-- <div class="output_sec"> -->
+      <section id="sec1" class="sec">
+        <!-- 화면생성후 5초 뒤에 sec2로 넘어감 -->
+        <h1 hidden>메인화면</h1>
+        <div class="sec1_girl">
+          <img src="./img/sec1_여자만.png" alt="여자" />
+        </div>
+        <div class="sec1_bubble">
+          <img src="./img/sec1_작은비눗방울.png" alt="비눗방울" />
+        </div>
+        <div class="sec1_bigbubble1">
+          <div>
+            <img
+              src="./img/인물_비눗방울건_큰비눗방울1_c.png"
+              alt="비눗방울1"
+            />
           </div>
-          <div class="sec1_bubble">
+          <p>
+            평범한 <br />
+            비눗물을
+          </p>
+        </div>
+        <div class="sec1_bigbubble2">
+          <div>
+            <img
+              src="./img/인물_비눗방울건_큰비눗방울2_c.png"
+              alt="비눗방울2"
+            />
+          </div>
+          <p>
+            오색찬란한 <br />
+            비눗방울로 만들어갈
+          </p>
+        </div>
+        <div class="sec1_bigbubble3">
+          <div>
+            <img
+              src="./img/인물_비눗방울건_큰비눗방울4_c.png"
+              alt="비눗방울3"
+            />
+          </div>
+          <p>
+            디자이너 <br />
+            김나희입니다
+          </p>
+        </div>
+      </section>
+      <div class="output">
+        <section id="sec2" class="sec">
+          <h1 hidden>메인화면</h1>
+          <div class="sec2_girl"><img src="./img/sec2.png" alt="여자" /></div>
+          <div class="sec2_bubble">
             <img src="./img/sec1_작은비눗방울.png" alt="비눗방울" />
           </div>
-          <div class="sec1_bigbubble1">
-            <div>
-              <img
-                src="./img/인물_비눗방울건_큰비눗방울1_c.png"
-                alt="비눗방울1"
-              />
-            </div>
-            <p>
-              평범한 <br />
-              비눗물을
-            </p>
+          <div class="sec2_about">
+            <a href="#sec3">About</a>
           </div>
-          <div class="sec1_bigbubble2">
-            <div>
-              <img
-                src="./img/인물_비눗방울건_큰비눗방울2_c.png"
-                alt="비눗방울2"
-              />
-            </div>
-            <p>
-              오색찬란한 <br />
-              비눗방울로 만들어갈
-            </p>
+          <div class="sec2_work">
+            <a href="#sec4">work</a>
           </div>
-          <div class="sec1_bigbubble3">
-            <div>
-              <img
-                src="./img/인물_비눗방울건_큰비눗방울4_c.png"
-                alt="비눗방울3"
-              />
-            </div>
-            <p>
-              디자이너 <br />
-              김나희입니다
-            </p>
+          <div class="sec2_contact">
+            <a href="#sec5">contact</a>
           </div>
         </section>
-        <div class="output">
-          <section id="sec2" class="sec">
-            <h1 hidden>메인화면</h1>
-            <div class="sec2_girl"><img src="./img/sec2.png" alt="여자" /></div>
-            <div class="sec2_bubble">
-              <img src="./img/sec1_작은비눗방울.png" alt="비눗방울" />
-            </div>
-            <div class="sec2_about">
-              <a href="#sec3">About</a>
-            </div>
-            <div class="sec2_work">
-              <a href="#sec4">work</a>
-            </div>
-            <div class="sec2_contact">
-              <a href="#sec5">contact</a>
-            </div>
-          </section>
-          <section id="sec3" class="sec">
-            <h1>About</h1>
-            <div class="sec3_box mw">
-              <div class="sec3_left">
-                <div class="sec3_nahee">
-                  <img src="./img/IMG_9350.jpg" alt="프로필사진" />
-                </div>
-                <div class="sec3_character">
-                  <p>#호기심많은</p>
-                  <p>#다재다능한</p>
-                  <p>#의사소통잘하는</p>
-                </div>
+        <section id="sec3" class="sec">
+          <h1>About</h1>
+          <div class="sec3_box mw">
+            <div class="sec3_left">
+              <div class="sec3_nahee">
+                <img src="./img/IMG_9350.jpg" alt="프로필사진" />
               </div>
-              <div class="sec3_right">
-                <div class="sec3_con">
-                  <div id="sec3_textbox" class="sec3_textbox1">
-                    <p>김나희 <span>Kim nahee</span></p>
-                    <div class="sec3_detail">
-                      <p>1995. 08. 18</p>
-                      <p>대전광역시 서구 거주중</p>
-                      <p>fpqghd@naver.com</p>
-                    </div>
+              <div class="sec3_character">
+                <p>#호기심많은</p>
+                <p>#다재다능한</p>
+                <p>#의사소통잘하는</p>
+              </div>
+            </div>
+            <div class="sec3_right">
+              <div class="sec3_con">
+                <div id="sec3_textbox" class="sec3_textbox1">
+                  <p>김나희 <span>Kim nahee</span></p>
+                  <div class="sec3_detail">
+                    <p>1995. 08. 18</p>
+                    <p>대전광역시 서구 거주중</p>
+                    <p>fpqghd@naver.com</p>
                   </div>
-                  <div id="sec3_textbox" class="sec3_textbox2">
-                    <p>Education</p>
-                    <div class="sec3_detail">
-                      <p>
-                        2022.08 - 2022.01 <br />
-                        그린컴퓨터아트학원 <br />
-                        [과정평가형]웹디자인기능사(웹퍼블리셔,
-                        프론트앤드)취득과정 수료
-                      </p>
-                      <p>
-                        2014 - 2019.08 <br />
-                        건양대학교 호텔관광학부 졸업
-                      </p>
-                      <p>
-                        2011 - 2014 <br />
-                        대전구봉고등학교 졸업
-                      </p>
-                    </div>
+                </div>
+                <div id="sec3_textbox" class="sec3_textbox2">
+                  <p>Education</p>
+                  <div class="sec3_detail">
+                    <p>
+                      2022.08 - 2022.01 <br />
+                      그린컴퓨터아트학원 <br />
+                      [과정평가형]웹디자인기능사(웹퍼블리셔, 프론트앤드)취득과정
+                      수료
+                    </p>
+                    <p>
+                      2014 - 2019.08 <br />
+                      건양대학교 호텔관광학부 졸업
+                    </p>
+                    <p>
+                      2011 - 2014 <br />
+                      대전구봉고등학교 졸업
+                    </p>
                   </div>
-                  <div id="sec3_textbox" class="sec3_textbox3">
-                    <p>License</p>
-                    <div class="sec3_detail">
-                      <p>
-                        2008.10.02 <br />
-                        GTQ 2급 취득
-                      </p>
-                      <p>
-                        2023.02 <br />
-                        웹디자인기능사 취득시험예정
-                      </p>
-                    </div>
+                </div>
+                <div id="sec3_textbox" class="sec3_textbox3">
+                  <p>License</p>
+                  <div class="sec3_detail">
+                    <p>
+                      2008.10.02 <br />
+                      GTQ 2급 취득
+                    </p>
+                    <p>
+                      2023.02 <br />
+                      웹디자인기능사 취득시험예정
+                    </p>
                   </div>
-                  <div id="sec3_textbox" class="sec3_textbox4">
-                    <p>Skill</p>
-                    <ul class="sec3_detail">
-                      <li>
-                        <div class="sec3_tool">
-                          <img src="./img/포토샵로고.png" alt="포토샵" />
-                        </div>
-                        <div class="sec3_tooldetail">
-                          <p>photoshop</p>
-                          <p>
-                            상황에 맞는 툴을 활용하여<br />
-                            이미지 편집 및 제작 가능
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="sec3_tool">
-                          <img src="./img/일러스트로고.png" alt="일러스트" />
-                        </div>
-                        <div class="sec3_tooldetail">
-                          <p>illustrator</p>
-                          <p>
-                            기본적인 툴을 활용하여<br />
-                            이미지 편집 및 제작 가능
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="sec3_tool">
-                          <img src="./img/html로고.png" alt="html" />
-                        </div>
-                        <div class="sec3_tooldetail">
-                          <p>html</p>
-                          <p>
-                            웹 표준과 웹 접근성을<br />
-                            고려한 퍼블리싱
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="sec3_tool">
-                          <img src="./img/css로고.png" alt="css" />
-                        </div>
-                        <div class="sec3_tooldetail">
-                          <p>css</p>
-                          <p>
-                            구조와 속성을 이해하고<br />
-                            원하는 스타일로 코드 구현
-                          </p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="sec3_tool">
-                          <img
-                            src="./img/자바스크립트 로고.png"
-                            alt="jsjquery"
-                          />
-                        </div>
-                        <div class="sec3_tooldetail">
-                          <p>js & jquery</p>
-                          <p>
-                            기본 문법을 이해하고<br />
-                            간단한 이벤트 기능구현
-                          </p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                </div>
+                <div id="sec3_textbox" class="sec3_textbox4">
+                  <p>Skill</p>
+                  <ul class="sec3_detail">
+                    <li>
+                      <div class="sec3_tool">
+                        <img src="./img/포토샵로고.png" alt="포토샵" />
+                      </div>
+                      <div class="sec3_tooldetail">
+                        <p>photoshop</p>
+                        <p>
+                          상황에 맞는 툴을 활용하여<br />
+                          이미지 편집 및 제작 가능
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sec3_tool">
+                        <img src="./img/일러스트로고.png" alt="일러스트" />
+                      </div>
+                      <div class="sec3_tooldetail">
+                        <p>illustrator</p>
+                        <p>
+                          기본적인 툴을 활용하여<br />
+                          이미지 편집 및 제작 가능
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sec3_tool">
+                        <img src="./img/html로고.png" alt="html" />
+                      </div>
+                      <div class="sec3_tooldetail">
+                        <p>html</p>
+                        <p>
+                          웹 표준과 웹 접근성을<br />
+                          고려한 퍼블리싱
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sec3_tool">
+                        <img src="./img/css로고.png" alt="css" />
+                      </div>
+                      <div class="sec3_tooldetail">
+                        <p>css</p>
+                        <p>
+                          구조와 속성을 이해하고<br />
+                          원하는 스타일로 코드 구현
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="sec3_tool">
+                        <img src="./img/자바스크립트 로고.png" alt="jsjquery" />
+                      </div>
+                      <div class="sec3_tooldetail">
+                        <p>js & jquery</p>
+                        <p>
+                          기본 문법을 이해하고<br />
+                          간단한 이벤트 기능구현
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </section>
-          <section id="sec4" class="sec">
-            <div class="sec4_con mw">
-              <h1>Work</h1>
-              <ul class="sec4_left">
-                <li class="sec4_bigmain on">
-                  <div class="sec4_bigimg">
-                    <img src="./img/카페띠아모메인.png" alt="카페띠아모" />
-                    <img
-                      src="./img/카페띠아모_전체메인화면.png"
-                      alt="카페띠아모"
-                    />
-                  </div>
-                  <div class="sec4_text">
-                    <p>01</p>
-                    <p>카페 띠아모 홈페이지 리뉴얼 프로젝트</p>
-                    <a>자세히보기</a>
-                  </div>
-                </li>
-                <li class="sec4_bigmain">
-                  <div class="sec4_bigimg">
-                    <img src="./img/오라면메인.png" alt="오늘의라면" />
-                    <img src="./img/오라면_전체화면.png" alt="오늘의라면" />
-                  </div>
-                  <div class="sec4_text">
-                    <p>02</p>
-                    <p>오늘의 라면 홈페이지 리뉴얼 프로젝트</p>
-                    <a>자세히보기</a>
-                  </div>
-                </li>
-                <li class="sec4_bigmain">
-                  <div class="sec4_bigimg">
-                    <img src="./img/포시즌스메인.png" alt="포시즌스서울" />
-                    <img src="./img/포시즌스_전체화면.png" alt="포시즌스서울" />
-                  </div>
-                  <div class="sec4_text">
-                    <p>03</p>
-                    <p>포시즌스 서울 홈페이지 리뉴얼 프로젝트</p>
-                    <a>자세히보기</a>
-                  </div>
-                </li>
-              </ul>
-              <div class="sec4_right">
+          </div>
+        </section>
+        <section id="sec4" class="sec">
+          <div class="sec4_con mw">
+            <h1>Work</h1>
+            <ul class="sec4_left">
+              <li class="sec4_bigmain on">
+                <div class="sec4_bigimg">
+                  <img src="./img/카페띠아모메인.png" alt="카페띠아모" />
+                  <img
+                    src="./img/카페띠아모_전체메인화면.jpg"
+                    alt="카페띠아모"
+                  />
+                </div>
+                <div class="sec4_text">
+                  <p>01</p>
+                  <p>카페 띠아모 홈페이지 리뉴얼 프로젝트</p>
+                  <a>자세히보기</a>
+                </div>
+              </li>
+              <li class="sec4_bigmain">
+                <div class="sec4_bigimg">
+                  <img src="./img/오라면메인.png" alt="오늘의라면" />
+                  <img src="./img/오라면_전체화면.jpg" alt="오늘의라면" />
+                </div>
+                <div class="sec4_text">
+                  <p>02</p>
+                  <p>오늘의 라면 홈페이지 리뉴얼 프로젝트</p>
+                  <a>자세히보기</a>
+                </div>
+              </li>
+              <li class="sec4_bigmain">
+                <div class="sec4_bigimg">
+                  <img src="./img/포시즌스메인.png" alt="포시즌스서울" />
+                  <img src="./img/포시즌스_전체화면.png" alt="포시즌스서울" />
+                </div>
+                <div class="sec4_text">
+                  <p>03</p>
+                  <p>포시즌스 서울 홈페이지 리뉴얼 프로젝트</p>
+                  <a>자세히보기</a>
+                </div>
+              </li>
+            </ul>
+            <div class="sec4_right">
+              <div>
+                <button class="on">
+                  <img src="./img/카페띠아모메인.png" alt="카페띠아모" />
+                </button>
+                <button>
+                  <img src="./img/오라면메인.png" alt="오늘의라면" />
+                </button>
+                <button>
+                  <img src="./img/포시즌스메인.png" alt="포시즌스서울" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="sec5" class="sec">
+          <h1>Contact</h1>
+          <div class="sec5_text mw">
+            <div class="sec5_introduce">
+              <p>
+                빛나고 눈길을 사로잡는 비눗방울을 <br />
+                만들겠습니다.
+              </p>
+              <p>
+                제가 표현할 비눗방울의 다양한 컬러가 <br />
+                잘 드러날 수 있도록 퍼블리싱 하겠습니다.
+              </p>
+            </div>
+            <div class="sec5_chat">
+              <div class="sec5_kakao">
                 <div>
-                  <button class="on">
-                    <img src="./img/카페띠아모메인.png" alt="카페띠아모" />
-                  </button>
-                  <button>
-                    <img src="./img/오라면메인.png" alt="오늘의라면" />
-                  </button>
-                  <button>
-                    <img src="./img/포시즌스메인.png" alt="포시즌스서울" />
-                  </button>
+                  <img src="./img/카카오톡 로고.png" alt="카카오톡" />
                 </div>
+                <p>오픈채팅 : WebDnahee</p>
+              </div>
+              <div class="sec5_slack">
+                <div><img src="./img/슬랙로고.png" alt="슬랙" /></div>
+                <p>fpqghd@naver.com</p>
               </div>
             </div>
-          </section>
-          <section id="sec5" class="sec">
-            <h1>Contact</h1>
-            <div class="sec5_text mw">
-              <div class="sec5_introduce">
-                <p>
-                  빛나고 눈길을 사로잡는 비눗방울을 <br />
-                  만들겠습니다.
-                </p>
-                <p>
-                  제가 표현할 비눗방울의 다양한 컬러가 <br />
-                  잘 드러날 수 있도록 퍼블리싱 하겠습니다.
-                </p>
+          </div>
+          <div class="sec5_back">
+            <img src="./img/foot배경_작은동그라미.png" alt="sec5_바닥배경" />
+          </div>
+        </section>
+      </div>
+      <!-- </div> -->
+      <div class="subpage">
+        <section id="sub1" class="sub">
+          <div id="sub1_con" class="sub_con">
+            <div id="sub1_title" class="sub_title">
+              <h2>카페 띠아모 홈페이지 리뉴얼 프로젝트</h2>
+              <button>닫기</button>
+            </div>
+            <div id="sub1_main" class="sub_main">
+              <div id="sub1_mockup" class="sub_mockup">
+                <div>
+                  <img
+                    src="./img/인물_비눗방울건_큰비눗방울2_cf.png"
+                    alt="비눗방울"
+                  />
+                </div>
+                <div><img src="./img/mockup_띠아모.png" alt="띠아모" /></div>
+                <div id="sub1_keyword" class="sub_keyword">
+                  <p>#보기편한</p>
+                  <p>#깔끔한</p>
+                  <p>#반응형</p>
+                </div>
               </div>
-              <div class="sec5_chat">
-                <div class="sec5_kakao">
-                  <div>
-                    <img src="./img/카카오톡 로고.png" alt="카카오톡" />
-                  </div>
-                  <p>오픈채팅 : WebDnahee</p>
-                </div>
-                <div class="sec5_slack">
-                  <div><img src="./img/슬랙로고.png" alt="슬랙" /></div>
-                  <p>fpqghd@naver.com</p>
-                </div>
+              <div id="sub1_btns" class="sub_btns">
+                <div><button>기존 홈페이지</button></div>
+                <div><button>Figma</button></div>
+                <div><button>GitHub</button></div>
+                <div><button>Web Prototype</button></div>
               </div>
             </div>
-            <div class="sec5_back">
-              <img src="./img/foot배경_작은동그라미.png" alt="sec5_바닥배경" />
+            <ul id="sub1_text" class="sub_text">
+              <li>
+                <p>프로젝트명</p>
+                <p>카페 띠아모 홈페이지 리뉴얼</p>
+              </li>
+              <li>
+                <p>프로젝트 구성</p>
+                <p>반응형웹(메인페이지)</p>
+              </li>
+              <li>
+                <p>프로젝트 참여도</p>
+                <p>100%(1인 프로젝트)</p>
+              </li>
+              <li>
+                <p>Tool</p>
+                <p>photoshop, html, css, jquery, javascript</p>
+              </li>
+              <li>
+                <p>리뉴얼 목표</p>
+                <p>UI / UX 향상을 통한 이용자의 편의성 증가</p>
+              </li>
+              <li>
+                <p>Color</p>
+                <p>#F8F0E3</p>
+                <p>#18A8B5</p>
+              </li>
+            </ul>
+            <div id="sub1_detailcon" class="sub_detailcon">
+              <div class="mw">
+                <div id="sub1_onoff" class="sub_onoff">
+                  <p>설명 On/Off</p>
+                  <button>버튼</button>
+                </div>
+                <ul id="sub1_btnon" class="sub_btnon">
+                  <li id="sub1_detail1" class="sub_detail1">
+                    <div>
+                      <img src="./img/detail_띠아모1.jpg" alt="상세페이지1" />
+                    </div>
+                    <p>기존의 분할되어있는 3개의 페이지의 내용을 하나로 통합</p>
+                    <p>
+                      연결이 되어 있지않은 띠아모 Shop, <br />
+                      중복된 회사소개 등의 불필요한 요소 삭제
+                    </p>
+                    <p>
+                      카페 띠아모의 외관과 인테리어를 <br />
+                      직접 노출시켜 흥미를 유발
+                    </p>
+                  </li>
+                  <li id="sub1_detail2" class="sub_detail2">
+                    <div>
+                      <img src="./img/detail_띠아모2.jpg" alt="상세페이지2" />
+                    </div>
+                    <p>
+                      신메뉴가 출시된 것을 알 수 있도록 <br />
+                      신메뉴 탭을 따로 만들어 배치
+                    </p>
+                    <p>
+                      기존의 가독성이 떨어지는 <br />
+                      메뉴페이지를 <br />
+                      탭과 슬라이드를 사용하여 <br />
+                      보기 편하도록 변경
+                    </p>
+                  </li>
+                  <li id="sub1_detail3" class="sub_detail3">
+                    <div>
+                      <img src="./img/detail_띠아모3.jpg" alt="상세페이지3" />
+                    </div>
+                    <p>
+                      스크롤을 해야 볼 수 있던 <br />
+                      매장유형을 가로로 정리해서 <br />
+                      한 눈에 들어오도록 변경
+                    </p>
+                  </li>
+                  <li id="sub1_detail4" class="sub_detail4">
+                    <div>
+                      <img src="./img/detail_띠아모4.jpg" alt="상세페이지4" />
+                    </div>
+                    <p>신규오픈한 매장을 노출</p>
+                    <p>
+                      명확한 아이콘을 사용하여 <br />
+                      정확한 뜻을 전달할 수 있는 플로팅메뉴
+                    </p>
+                  </li>
+                </ul>
+                <ul id="sub1_btnoff" class="sub_btnoff">
+                  <li id="sub1_PC" class="sub_PC">
+                    <p>PC</p>
+                    <p>1920 X 1080 최적화</p>
+                    <div>
+                      <img
+                        src="./img/카페띠아모_전체메인화면.jpg"
+                        alt="카페띠아모PC"
+                      />
+                    </div>
+                  </li>
+                  <li id="sub1_TABLET" class="sub_TABLET">
+                    <p>TABLET</p>
+                    <p>820 X 1180 iPadAir 최적화</p>
+                    <div>
+                      <img
+                        src="./img/카페띠아모_테블릿전체화면.png"
+                        alt="카페띠아모TABLET"
+                      />
+                    </div>
+                  </li>
+                  <li id="sub1_MOBILE" class="sub_MOBILE">
+                    <p>MOBILE</p>
+                    <p>414 X 896 iPhoneXR 최적화</p>
+                    <div>
+                      <img
+                        src="./img/카페띠아모_모바일전체화면.png"
+                        alt="카페띠아모MOBILE"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+        <section id="sub2" class="sub">
+          <div id="sub2_con" class="sub_con">
+            <div id="sub2_title" class="sub_title">
+              <h2>오늘의 라면 홈페이지 리뉴얼 프로젝트</h2>
+              <button>닫기</button>
+            </div>
+            <div id="sub2_main" class="sub_main">
+              <div id="sub2_mockup" class="sub_mockup">
+                <div>
+                  <img
+                    src="./img/인물_비눗방울건_큰비눗방울2_cf.png"
+                    alt="비눗방울"
+                  />
+                </div>
+                <div><img src="./img/mockup_오라면.png" alt="오라면" /></div>
+                <div id="sub2_keyword" class="sub_keyword">
+                  <p>#기존컨셉을살린</p>
+                  <p>#귀여운</p>
+                  <p>#반응형</p>
+                </div>
+              </div>
+              <div id="sub2_btns" class="sub_btns">
+                <div><button>기존 홈페이지</button></div>
+                <div><button>Figma</button></div>
+                <div><button>GitHub</button></div>
+                <div><button>Web Prototype</button></div>
+              </div>
+            </div>
+            <ul id="sub2_text" class="sub_text">
+              <li>
+                <p>프로젝트명</p>
+                <p>오늘의 라면 홈페이지 리뉴얼</p>
+              </li>
+              <li>
+                <p>프로젝트 구성</p>
+                <p>반응형웹(메인페이지)</p>
+              </li>
+              <li>
+                <p>프로젝트 참여도</p>
+                <p>100%(1인 프로젝트)</p>
+              </li>
+              <li>
+                <p>Tool</p>
+                <p>photoshop, html, css, jquery, javascript</p>
+              </li>
+              <li>
+                <p>리뉴얼 목표</p>
+                <p>홈페이지 목적에 대해 명확한 정보 전달</p>
+              </li>
+              <li>
+                <p>Color</p>
+                <p>#F44502</p>
+                <p>#FFDDBC</p>
+              </li>
+            </ul>
+            <div id="sub2_detailcon" class="sub_detailcon">
+              <div class="mw">
+                <div id="sub2_onoff" class="sub_onoff">
+                  <p>설명 On/Off</p>
+                  <button>버튼</button>
+                </div>
+                <ul id="sub2_btnon" class="sub_btnon">
+                  <li id="sub2_detail1" class="sub_detail1">
+                    <div>
+                      <img src="./img/detail_오라면1.png" alt="상세페이지1" />
+                    </div>
+                    <p>
+                      홈페이지의 전체적인 분위기와 일러스트는 유지한 상태로
+                      필요한 부분만 변경
+                    </p>
+                    <p>
+                      서브메뉴를 ‘이벤트’ 메뉴 하위에 놓고 <br />
+                      서브메뉴자리에 SNS를 위치시킴
+                    </p>
+                    <p>
+                      메인페이지에 ‘구독’ 이라는 <br />
+                      직접적인 단어를 사용하여 <br />
+                      홈페이지 정체성 부각
+                    </p>
+                  </li>
+                  <li id="sub2_detail2" class="sub_detail2">
+                    <div>
+                      <img src="./img/detail_오라면2.png" alt="상세페이지2" />
+                    </div>
+                    <p>
+                      기존의 가독성이 떨어지는 지그재그 구조에서 <br />
+                      한 눈에 들어오는 가로형 구조로 변경
+                    </p>
+                  </li>
+                  <li id="sub2_detail3" class="sub_detail3">
+                    <div>
+                      <img src="./img/detail_오라면3.png" alt="상세페이지3" />
+                    </div>
+                    <p>
+                      최상단의 배너와 배경색을 <br />
+                      비슷한 컬러를 사용하여 통일성을 줌
+                    </p>
+                  </li>
+                  <li id="sub2_detail4" class="sub_detail4">
+                    <div>
+                      <img src="./img/detail_오라면4.png" alt="상세페이지4" />
+                    </div>
+                    <p>
+                      구독서비스 특성에 맞춰 <br />
+                      고객들이 궁금해 할 질문을 한 페이지에 작성함으로서 <br />
+                      QnA 메뉴를 찾는 번거로움을 감소시킴
+                    </p>
+                    <p>하단에 브랜드 로고를 한 번 더 노출시킴</p>
+                  </li>
+                </ul>
+                <ul id="sub2_btnoff" class="sub_btnoff">
+                  <li id="sub2_PC" class="sub_PC">
+                    <p>PC</p>
+                    <p>1920 X 1080 최적화</p>
+                    <div>
+                      <img src="./img/오라면_전체화면.jpg" alt="오라면PC" />
+                    </div>
+                  </li>
+                  <li id="sub2_TABLET" class="sub_TABLET">
+                    <p>TABLET</p>
+                    <p>820 X 1180 iPadAir 최적화</p>
+                    <div>
+                      <img
+                        src="./img/오라면_테블릿전체.png"
+                        alt="오라면TABLET"
+                      />
+                    </div>
+                  </li>
+                  <li id="sub2_MOBILE" class="sub_MOBILE">
+                    <p>MOBILE</p>
+                    <p>414 X 896 iPhoneXR 최적화</p>
+                    <div>
+                      <img
+                        src="./img/오라면_핸드폰전체.png"
+                        alt="오라면MOBILE"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="sub3" class="sub">
+          <div id="sub3_con" class="sub_con">
+            <div id="sub3_title" class="sub_title">
+              <h2>포시즌스 서울 홈페이지 리뉴얼 프로젝트</h2>
+              <button>닫기</button>
+            </div>
+            <div id="sub3_main" class="sub_main">
+              <div id="sub3_mockup" class="sub_mockup">
+                <div>
+                  <img
+                    src="./img/인물_비눗방울건_큰비눗방울2_cf.png"
+                    alt="비눗방울"
+                  />
+                </div>
+                <div>
+                  <img src="./img/mockup_포시즌스.png" alt="포시즌스서울" />
+                </div>
+                <div id="sub3_keyword" class="sub_keyword">
+                  <p>#호텔에온것같은</p>
+                  <p>#고급스러운</p>
+                  <p>#반응형</p>
+                </div>
+              </div>
+              <div id="sub3_btns" class="sub_btns">
+                <div><button>기존 홈페이지</button></div>
+                <div><button>Figma</button></div>
+                <div><button>GitHub</button></div>
+                <div><button>Web Prototype</button></div>
+              </div>
+            </div>
+            <ul id="sub3_text" class="sub_text">
+              <li>
+                <p>프로젝트명</p>
+                <p>포시즌스 서울 홈페이지 리뉴얼</p>
+              </li>
+              <li>
+                <p>프로젝트 구성</p>
+                <p>반응형웹(메인페이지)</p>
+              </li>
+              <li>
+                <p>프로젝트 참여도</p>
+                <p>100%(1인 프로젝트)</p>
+              </li>
+              <li>
+                <p>Tool</p>
+                <p>photoshop, html, css, jquery, javascript</p>
+              </li>
+              <li>
+                <p>리뉴얼 목표</p>
+                <p>이용자의 편의성 증가 및 업종에 맞는 요소추가</p>
+              </li>
+              <li>
+                <p>Color</p>
+                <p>#294052</p>
+                <p>#F8E4CC</p>
+              </li>
+            </ul>
+            <div id="sub3_detailcon" class="sub_detailcon">
+              <div class="mw">
+                <div id="sub3_onoff" class="sub_onoff">
+                  <p>설명 On/Off</p>
+                  <button>버튼</button>
+                </div>
+                <ul id="sub3_btnon" class="sub_btnon">
+                  <li id="sub3_detail1" class="sub_detail1">
+                    <div>
+                      <img src="./img/detail_포시즌스1.png" alt="상세페이지1" />
+                    </div>
+                    <p>호텔의 이미지와 어울리도록 컨셉설정</p>
+                    <p>
+                      ‘포시즌스 서울’ 링크와 <br />
+                      ‘포시즌스 글로벌’ 링크의 분리
+                    </p>
+                    <p>메뉴의 간소화</p>
+                    <p>
+                      페이지전환없이 <br />
+                      메인화면에서 즉각적으로 <br />
+                      객실조회가능
+                    </p>
+                  </li>
+                  <li id="sub3_detail2" class="sub_detail2">
+                    <div>
+                      <img src="./img/detail_포시즌스2.png" alt="상세페이지2" />
+                    </div>
+                    <p>
+                      ‘포시즌스 글로벌’ <br />
+                      ‘포시즌스 서울’ <br />
+                      ‘포시즌스 웨딩’ <br />
+                      SNS 링크연결
+                    </p>
+                  </li>
+                  <li id="sub3_detail3" class="sub_detail3">
+                    <div>
+                      <img src="./img/detail_포시즌스3.png" alt="상세페이지3" />
+                    </div>
+                    <p>
+                      기존의 긴 텍스트를 간소화하여 <br />
+                      가독성을 높임
+                    </p>
+                  </li>
+                  <li id="sub3_detail4" class="sub_detail4">
+                    <div>
+                      <img src="./img/detail_포시즌스4.png" alt="상세페이지4" />
+                    </div>
+                    <p>
+                      호텔에 방문을 해야하는 업종의 특성상 <br />
+                      고객에게 필요한 지도와 주차안내 추가
+                    </p>
+                  </li>
+                </ul>
+                <ul id="sub3_btnoff" class="sub_btnoff">
+                  <li id="sub3_PC" class="sub_PC">
+                    <p>PC</p>
+                    <p>1920 X 1080 최적화</p>
+                    <div>
+                      <img src="./img/포시즌스_전체화면.png" alt="포시즌스PC" />
+                    </div>
+                  </li>
+                  <li id="sub3_TABLET" class="sub_TABLET">
+                    <p>TABLET</p>
+                    <p>820 X 1180 iPadAir 최적화</p>
+                    <div>
+                      <img
+                        src="./img/포시즌스_테블릿전체화면.png"
+                        alt="포시즌스TABLET"
+                      />
+                    </div>
+                  </li>
+                  <li id="sub3_MOBILE" class="sub_MOBILE">
+                    <p>MOBILE</p>
+                    <p>414 X 896 iPhoneXR 최적화</p>
+                    <div>
+                      <img
+                        src="./img/포시즌스_모바일전체화면.png"
+                        alt="포시즌스MOBILE"
+                      />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <footer>
         <p>Copyright © KimNahee. All Rights Reserved.</p>
