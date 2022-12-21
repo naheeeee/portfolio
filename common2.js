@@ -169,3 +169,6 @@ $sec4Button.forEach(function (item, idx) {
     $sec4Bigmain[idx].classList.add("on");
   });
 });
+
+// 팝업
+// 스크롤이벤트 삭제(섹션이벤트, 페이지 고정), 닫기활성화, 홈페이지연결, 설명온오프활성화

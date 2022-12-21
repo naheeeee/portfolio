@@ -58,6 +58,10 @@ html {
 .wrap {
   overflow: hidden;
 }
+p,
+a {
+  white-space: nowrap;
+}
 header {
   background-color: white;
   border-top: 1px solid #eaeaea;
