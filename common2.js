@@ -52,8 +52,8 @@ window.addEventListener("scroll", function (e) {
   if (scrollTop >= 0 && scrollTop < ht * 1) {
     $bubble1.style.cssText = `  top: 9vw;
     left: 40vw; transition: 0.5s;`;
-    $bubble2.style.cssText = `top: 23.5vw;
-    left: 49vw; transition: 0.5s;`;
+    $bubble2.style.cssText = `top: 24.5vw;
+    left: 49.5vw; transition: 0.5s;`;
     $bubble3.style.cssText = ` top: 8vw;
     left: 68vw; transition: 0.5s;`;
     $bubble3sub.style.cssText = ` opacity: 0`;
@@ -170,31 +170,29 @@ $sec4Button.forEach(function (item, idx) {
   });
 });
 
-// 팝업
-// 스크롤이벤트 삭제(페이지 고정), 홈페이지연결, 설명온오프활성화
-
 // sub
-const $body = document.querySelectorAll("header ~ .output");
-const $sec4TextA = document.querySelectorAll(".sec4_text>a");
-const $subpage = document.querySelectorAll(".subpage");
-const $sub = document.querySelectorAll(".subpage >.sub");
+const $sec4TextA = document.querySelectorAll(".sec4_text>button");
+const $subpage = document.querySelector(".subpage");
 const $subTitleBtn = document.querySelectorAll(".sub_title>button");
 const $subOnoffBtn = document.querySelectorAll(".sub_onoff>button");
 const $subBtnOn = document.querySelectorAll(".sub_btnon");
 const $subBtnOff = document.querySelectorAll(".sub_btnoff");
-
+const $sub = document.querySelectorAll(".subpage >.sub");
 $sec4TextA.forEach(function (item, idx) {
   item.addEventListener("click", function (e) {
     e.preventDefault();
+    e.stopPropagation();
+    $subpage.classList.add("on");
     $sub[idx].classList.add("on");
-    // $body.classList.add("black");
-    // $sub.classList.add("scrollLock");
+    document.documentElement.classList.add("scrollLock");
   });
 });
 $subTitleBtn.forEach(function (item, idx) {
   item.addEventListener("click", function (e) {
     e.preventDefault();
+    $subpage.classList.remove("on");
     $sub[idx].classList.remove("on");
+    document.documentElement.classList.remove("scrollLock");
   });
 });
 $subOnoffBtn.forEach(function (item, idx) {

@@ -1,42 +1,26 @@
 @charset 'utf-8';
-@import url(./my_reset.css);
-
-@font-face {
-  font-family: "NanumSquareNeo";
-  src: url(./font/NanumSquareNeo-Variable.woff);
-  font-weight: normal;
-  font-style: normal;
-}
-
-:root {
-  font-family: "NanumSquareNeo";
-  --h: "MyLotteBold";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  color: #333;
-  --m1: #3d91cf;
-  --m2: #f79521;
-  --s2: #edb071;
-  --m3: #974998;
-  --s3: #c390be;
-  --m4: #26ad49;
-  --s4: #84d194;
-  --gray: #ababab;
-  --detailimg: #e0e0e0;
-}
 
 .subpage {
-  position: absolute;
-  top: 200vh;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 700;
-  background-color: white;
-  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.subpage.on {
+  display: block;
 }
 .subpage .sub {
+  display: none;
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+  background-color: white;
+  overflow: scroll;
+}
+
+.subpage .sub::-webkit-scrollbar {
   display: none;
 }
 .subpage .sub.on {
@@ -91,7 +75,7 @@
   background-repeat: no-repeat;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   animation: rad-move 30s linear infinite;
-  z-index: -1;
+  z-index: 1;
 }
 .subpage .sub_mockup > div:nth-of-type(2) {
   /* border: 1px solid red; */
@@ -100,6 +84,7 @@
   overflow: hidden;
   padding-top: 19%;
   position: relative;
+  z-index: 2;
 }
 .subpage .sub_mockup > div:nth-of-type(2) > img {
   width: 100%;
@@ -108,27 +93,34 @@
   left: 0;
 }
 .subpage .sub_keyword {
-  display: flex;
+  text-align: right;
+  position: absolute;
+  left: 28%;
+  bottom: 15%;
+  z-index: 2;
 }
 .subpage .sub_keyword p {
-  border: 1px solid var(--s3);
+  /* border: 1px solid var(--s3); */
   border-radius: 50px;
   padding: 0.5rem 1rem;
   color: var(--m3);
-  margin: 0 0.5rem;
+  line-height: 20px;
+  font-size: 1.25rem;
 }
 .subpage .sub_btns {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 25%;
   transform: translateY(-50%);
   text-align: center;
 }
 .subpage .sub_btns > div {
+  /* border: 1px solid red; */
   padding: 0.35rem 0;
 }
 .subpage .sub_btns > div > a {
   display: inline-block;
+  width: 100%;
   background-color: var(--m3);
   color: white;
   padding: 0.6rem 1.25rem;
@@ -499,13 +491,13 @@
   width: 7vw;
   height: 7vw;
   top: 10%;
-  left: 57%;
+  left: 55%;
   background-color: var(--s3);
   background-size: 1000%;
   background-repeat: no-repeat;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   animation: rad-move 30s linear infinite;
-  z-index: -1;
+  z-index: 2;
 }
 .subpage #sub2_text li:last-of-type p:nth-of-type(2)::before {
   background-color: #f44502;
