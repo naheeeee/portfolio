@@ -120,23 +120,23 @@
 .subpage .sub_btns {
   position: absolute;
   top: 50%;
-  right: 28%;
+  right: 25%;
   transform: translateY(-50%);
   text-align: center;
 }
 .subpage .sub_btns > div {
   padding: 0.35rem 0;
 }
-.subpage .sub_btns > div > button {
-  border: none;
+.subpage .sub_btns > div > a {
+  display: inline-block;
   background-color: var(--m3);
   color: white;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.25rem;
   border-radius: 50px;
   font-size: 1rem;
   cursor: pointer;
 }
-.subpage .sub_btns > div:first-of-type > button {
+.subpage .sub_btns > div:first-of-type > a {
   background-color: var(--s3);
 }
 .subpage .sub_btns > div:hover > button {
