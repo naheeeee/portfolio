@@ -55,8 +55,14 @@
 html {
   scroll-behavior: smooth;
 }
+.scrollLock {
+  overflow: hidden;
+}
 .wrap {
   overflow: hidden;
+}
+.black {
+  background: rgba(0, 0, 0, 0.7);
 }
 p,
 a {
@@ -1127,9 +1133,5 @@ header,
 .moveBubble,
 .gotop,
 .sec {
-  display: none;
-}
-
-.subpage {
   /* display: none; */
 }

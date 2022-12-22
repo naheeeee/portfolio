@@ -171,4 +171,43 @@ $sec4Button.forEach(function (item, idx) {
 });
 
 // 팝업
-// 스크롤이벤트 삭제(섹션이벤트, 페이지 고정), 닫기활성화, 홈페이지연결, 설명온오프활성화
+// 스크롤이벤트 삭제(페이지 고정), 홈페이지연결, 설명온오프활성화
+
+// sub
+const $body = document.querySelectorAll("header ~ .output");
+const $sec4TextA = document.querySelectorAll(".sec4_text>a");
+const $subpage = document.querySelectorAll(".subpage");
+const $sub = document.querySelectorAll(".subpage >.sub");
+const $subTitleBtn = document.querySelectorAll(".sub_title>button");
+const $subOnoffBtn = document.querySelectorAll(".sub_onoff>button");
+const $subBtnOn = document.querySelectorAll(".sub_btnon");
+const $subBtnOff = document.querySelectorAll(".sub_btnoff");
+
+$sec4TextA.forEach(function (item, idx) {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    $sub[idx].classList.add("on");
+    // $body.classList.add("black");
+    // $sub.classList.add("scrollLock");
+  });
+});
+$subTitleBtn.forEach(function (item, idx) {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    $sub[idx].classList.remove("on");
+  });
+});
+$subOnoffBtn.forEach(function (item, idx) {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    $subOnoffBtn.forEach(function (test) {
+      test.classList.toggle("on");
+    });
+    $subBtnOn.forEach(function (test) {
+      test.classList.toggle("on");
+    });
+    $subBtnOff.forEach(function (test) {
+      test.classList.toggle("on");
+    });
+  });
+});

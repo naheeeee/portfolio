@@ -27,9 +27,14 @@
 }
 
 .subpage {
-  position: relative;
+  position: absolute;
+  top: 200vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
   z-index: 700;
   background-color: white;
+  overflow: hidden;
 }
 .subpage .sub {
   display: none;
@@ -59,6 +64,10 @@
   padding: 0.35rem 0.75rem;
   border: none;
   background-color: var(--s3);
+  cursor: pointer;
+}
+.subpage .sub_title > button:hover {
+  font-weight: bold;
 }
 .subpage .sub_main {
   position: relative;
@@ -235,15 +244,15 @@
   border-radius: 25px;
   transition: 0.3s;
 }
-.subpage .sub_onoff > button:hover::after,
+/* .subpage .sub_onoff > button:hover::after, */
 .subpage .sub_onoff > button.on::after {
   /* left: auto;
   right: 10%; */
   transform: translate(100%, -50%);
 }
-.subpage .sub_onoff > button.on:hover::after {
+/* .subpage .sub_onoff > button.on:hover::after {
   transform: translate(0, -50%);
-}
+} */
 .subpage .sub_btnon > li {
   padding-top: 2%;
   display: flex;
