@@ -92,52 +92,159 @@ window.addEventListener("scroll", function (e) {
     height: 50vh; top:25vh; left:52vw; transition: 0.5s; opacity:0.6`;
   }
 
-  // if (matchMedia("screen and (min-width:414px)").matches) {
-  //   if (scrollTop >= 0 && scrollTop < ht * 1) {
-  //     // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
-  //     $bubble1.style.cssText = `  width: 30vw;
-  //     height: 30vw; top: 14vh;
-  //         left: 10vw; transition: 0.5s;`;
-  //     $bubble2.style.cssText = `width: 35vw;
-  //     height: 35vw; top: 37vh;
-  //         left: 27vw; transition: 0.5s;`;
-  //     $bubble3.style.cssText = ` width: 40vw;
-  //     height: 40vw;top: 18vh;
-  //         left: 50vw; transition: 0.5s;`;
-  //     $bubble3sub.style.cssText = ` opacity: 0`;
-  //   }
-  //   if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
-  //     // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
-  //     $bubble1.style.cssText = `  width: 10vh;
-  //         height: 10vh; top:25vh; left:65vw; transition: 0.5s; opacity:1 `;
-  //     // $bubble1Img.style.cssText = `animation: rad-move 10s linear infinite `;
-  //     $bubble2.style.cssText = `   width: 10vh;
-  //     height: 10vh; top:25vh; left:65vw; transition: 0.5s; opacity:0 `;
-  //     $bubble3.style.cssText = `   width: 10vh;
-  //     height: 10vh; top:25vh; left:65vw; transition: 0.5s; opacity:0 `;
-  //     $bubble3sub.style.cssText = ` opacity: 0`;
-  //   }
-  //   if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
-  //     // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
-  //     $bubble1.style.cssText = ` width: 10vh;
-  //     height: 10vh; top:7vh; left:45vw; transition: 0.5s; opacity:0 `;
-  //     $bubble2.style.cssText = `  width: 10vh;
-  //         height: 10vh; top:7vh; left:45vw; transition: 0.5s; opacity:1 `;
-  //     $bubble3.style.cssText = `  width: 10vh;
-  //     height: 10vh; top:7vh; left:45vw; transition: 0.5s; opacity:0 `;
-  //     $bubble3sub.style.cssText = ` opacity: 0`;
-  //   }
-  //   if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
-  //     // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
-  //     $bubble1.style.cssText = `  width: 20vw;
-  //         height: 20vw; top:10vh; left:5.5vw; transition: 0.5s; opacity:0 `;
-  //     $bubble2.style.cssText = `  width: 8vw;
-  //         height: 8vw; top:10vh; left:5.5vw; transition: 0.5s; opacity:0 `;
-  //     $bubble3.style.cssText = `  width: 25vh;
-  //         height: 25vh; top:18vh; left:calc(50vw - 12.5vh); transition: 0.5s; opacity:1 `;
-  //     $bubble3sub.style.cssText = ` top:0vh; left:0vw; transition: 0.5s; opacity:0.6`;
-  //   }
-  // }
+  if (matchMedia("screen and (max-width:1500px)").matches) {
+    if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+      $bubble1.style.cssText = `  width: 10vh;
+          height: 10vh; top:55vh; left:23vw; transition: 0.5s; opacity:1 `;
+      $bubble2.style.cssText = `   width: 10vh;
+      height: 10vh; top:55vh; left:23vw; transition: 0.5s; opacity:0 `;
+      $bubble3.style.cssText = `   width: 10vh;
+      height: 10vh; top:55vh; left:23vw; transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+    }
+    if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
+      $bubble1.style.cssText = `  width: 17vh;
+      height: 17vh; top:13vh; left:3vw; transition: 0.5s; opacity:0 `;
+      $bubble2.style.cssText = `  width: 17vh;
+      height: 17vh; top:13vh; left:3vw; transition: 0.5s; opacity:1 `;
+      $bubble3.style.cssText = `  width: 17vh;
+      height: 17vh; top:13vh; left:3vw; transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+  }
+
+  if (matchMedia("screen and (max-width:1150px)").matches) {
+    if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+      $bubble1.style.cssText = `  width: 10vh;
+          height: 10vh; top:63vh; left:27vw; transition: 0.5s; opacity:1 `;
+      $bubble2.style.cssText = `   width: 10vh;
+      height: 10vh;top:63vh; left:27vw;  transition: 0.5s; opacity:0 `;
+      $bubble3.style.cssText = `   width: 10vh;
+      height: 10vh; top:63vh; left:27vw;  transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+    }
+    if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
+      $bubble1.style.cssText = `   width: 40vh;
+      height: 40vh; top:30vh; left:50vw; transition: 0.5s; opacity:0 `;
+      $bubble2.style.cssText = `   width: 40vh;
+      height: 40vh; top:30vh; left:50vw; transition: 0.5s; opacity:0 `;
+      $bubble3.style.cssText = `  width: 40vh;
+      height: 40vh; top:30vh; left:50vw; transition: 0.5s; opacity:1 `;
+      $bubble3sub.style.cssText = `width: 40vh;
+      height: 40vh; top:30vh; left:50vw; transition: 0.5s; opacity:0.6`;
+      $bubble3sub2.style.cssText = ` width: 40vh;
+      height: 40vh; top:30vh; left:50vw; transition: 0.5s; opacity:0.6`;
+    }
+  }
+
+  if (matchMedia("screen and (max-width:1000px)").matches) {
+    if (scrollTop >= 0 && scrollTop < ht * 1) {
+      $bubble1.style.cssText = `  width: 20vw;
+      height: 20vw; top: 13vh; left: 37vw; transition: 0.5s;`;
+      $bubble2.style.cssText = `width: 23vw;
+      height: 23vw; top: 42vw;left: 55vw; transition: 0.5s;`;
+      $bubble3.style.cssText = `width: 25vw; height: 25vw;  top: 11vw;
+    left: 70vw; transition: 0.5s;`;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+    if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
+      $bubble1.style.cssText = `  width: 17vh;
+    height: 17vh; top:13vh; left:6.5vw; transition: 0.5s; opacity:0 `;
+      $bubble2.style.cssText = `  width: 17vh;
+    height: 17vh; top:13vh; left:6.5vw; transition: 0.5s; opacity:1 `;
+      $bubble3.style.cssText = `  width: 17vh;
+    height: 17vh; top:13vh; left:6.5vw; transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+  }
+
+  if (matchMedia("screen and (max-width:900px)").matches) {
+    if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+      $bubble1.style.cssText = `  width: 8vh;
+          height: 8vh; top:33vh; left:60vw; transition: 0.5s; opacity:1 `;
+      $bubble2.style.cssText = `   width: 8vh;
+      height: 8vh; top:33vh; left:60vw; transition: 0.5s; opacity:0 `;
+      $bubble3.style.cssText = `   width: 8vh;
+      height: 8vh; top:33vh; left:60vw; transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+    if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
+      $bubble1.style.cssText = ` width: 10vh;
+      height: 10vh; top:25vh; left:7vw; transition: 0.5s; opacity:0 `;
+      $bubble2.style.cssText = `  width: 10vh;
+          height: 10vh; top:25vh; left:7vw; transition: 0.5s; opacity:1 `;
+      $bubble3.style.cssText = `  width: 10vh;
+      height: 10vh; top:25vh; left:7vw; transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+    if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
+      $bubble1.style.cssText = `  width: 20vw;
+          height: 20vw; top:10vh; left:5.5vw; transition: 0.5s; opacity:0 `;
+      $bubble2.style.cssText = `  width: 8vw;
+          height: 8vw; top:10vh; left:5.5vw; transition: 0.5s; opacity:0 `;
+      $bubble3.style.cssText = `   width: 30vh;
+      height: 30vh; top:25vh; left:calc(50vw - 15vh); transition: 0.5s; opacity:1 `;
+      $bubble3sub.style.cssText = ` width: 30vh;
+      height: 30vh; top:25vh; left:calc(50vw - 15vh); transition: 0.5s; opacity:0.6`;
+      $bubble3sub2.style.cssText = ` width: 30vh;
+      height: 30vh; top:25vh; left:calc(50vw - 15vh); transition: 0.5s; opacity:0.6`;
+    }
+  }
+
+  if (matchMedia("screen and (max-width:414px)").matches) {
+    if (scrollTop >= 0 && scrollTop < ht * 1) {
+      // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
+      $bubble1.style.cssText = `  width: 30vw;
+      height: 30vw; top: 14vh;
+          left: 10vw; transition: 0.5s;`;
+      $bubble2.style.cssText = `width: 35vw;
+      height: 35vw; top: 37vh;
+          left: 27vw; transition: 0.5s;`;
+      $bubble3.style.cssText = ` width: 40vw;
+      height: 40vw;top: 18vh;
+          left: 50vw; transition: 0.5s;`;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+    if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+      // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
+      $bubble1.style.cssText = `  width: 10vh;
+          height: 10vh; top:25vh; left:65vw; transition: 0.5s; opacity:1 `;
+      $bubble2.style.cssText = `   width: 10vh;
+      height: 10vh; top:25vh; left:65vw; transition: 0.5s; opacity:0 `;
+      $bubble3.style.cssText = `   width: 10vh;
+      height: 10vh; top:25vh; left:65vw; transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+    if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
+      // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
+      $bubble1.style.cssText = ` width: 10vh;
+      height: 10vh; top:7vh; left:45vw; transition: 0.5s; opacity:0 `;
+      $bubble2.style.cssText = `  width: 10vh;
+          height: 10vh; top:7vh; left:45vw; transition: 0.5s; opacity:1 `;
+      $bubble3.style.cssText = `  width: 10vh;
+      height: 10vh; top:7vh; left:45vw; transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+    if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
+      // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
+      $bubble1.style.cssText = `  width: 20vw;
+          height: 20vw; top:10vh; left:5.5vw; transition: 0.5s; opacity:0 `;
+      $bubble2.style.cssText = `  width: 8vw;
+          height: 8vw; top:10vh; left:5.5vw; transition: 0.5s; opacity:0 `;
+      $bubble3.style.cssText = `  width: 25vh;
+          height: 25vh; top:18vh; left:calc(50vw - 12.5vh); transition: 0.5s; opacity:1 `;
+      $bubble3sub.style.cssText = ` top:0vh; left:0vw; transition: 0.5s; opacity:0.6`;
+      $bubble3sub2.style.cssText = ` top:0vh; left:0vw; transition: 0.5s; opacity:0.6`;
+    }
+  }
 
   elm.forEach((item2, i) => {
     if (scrollTop >= item2.offsetTop - 5) {
