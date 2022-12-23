@@ -196,6 +196,19 @@ window.addEventListener("scroll", function (e) {
     }
   }
 
+  if (matchMedia("screen and (max-width:750px)").matches) {
+    if (scrollTop >= 0 && scrollTop < ht * 1) {
+      $bubble1.style.cssText = `  width: 25vw;
+      height: 28vw; top: 20vh; left: 20vw; transition: 0.5s;`;
+      $bubble2.style.cssText = `width: 28vw;
+      height: 29vw; top: 65vw; left: 62vw; transition: 0.5s;`;
+      $bubble3.style.cssText = `width: 30vw; height: 30vw; 
+       top: 13vh; left: 60vw; transition: 0.5s;`;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+  }
+
   if (matchMedia("screen and (max-width:414px)").matches) {
     if (scrollTop >= 0 && scrollTop < ht * 1) {
       // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
