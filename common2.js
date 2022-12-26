@@ -61,7 +61,7 @@ window.addEventListener("scroll", function (e) {
   }
   if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
     $bubble1.style.cssText = `  width: 10vh;
-    height: 10vh; top:62vh; left:26vw; transition: 0.5s;opacity:1 `;
+    height: 10vh; top:62vh; left:26vw; transition: 0.5s; opacity:1 `;
     $bubble2.style.cssText = `  width: 10vh;
     height: 10vh; top:62vh; left:26vw; transition: 0.5s; opacity:0 `;
     $bubble3.style.cssText = `  width: 10vh;
@@ -207,11 +207,41 @@ window.addEventListener("scroll", function (e) {
       $bubble3sub.style.cssText = ` opacity: 0`;
       $bubble3sub2.style.cssText = ` opacity: 0`;
     }
+    if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+      $bubble1.style.cssText = `  width: 8vh;
+        height: 8vh; top:36vh; left:60vw; transition: 0.5s; opacity:1 `;
+      $bubble2.style.cssText = `   width: 8vh;
+    height: 8vh; top:36vh; left:60vw; transition: 0.5s; opacity:0 `;
+      $bubble3.style.cssText = `   width: 8vh;
+    height: 8vh; top:36vh; left:60vw; transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
   }
-
-  if (matchMedia("screen and (max-width:414px)").matches) {
+  if (matchMedia("screen and (max-width:600px)").matches) {
     if (scrollTop >= 0 && scrollTop < ht * 1) {
-      // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
+      $bubble1.style.cssText = `  width: 27vw;
+      height: 28vw; top: 27vh; left: 15vw; transition: 0.5s;`;
+      $bubble2.style.cssText = `width: 29vw;
+      height: 30vw; top: 68vw; left: 62vw; transition: 0.5s;`;
+      $bubble3.style.cssText = `width: 35vw; height: 35vw; 
+       top: 13vh; left: 53vw; transition: 0.5s;`;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+    if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
+      $bubble1.style.cssText = `  width: 7vh;
+        height: 7vh; top:28vh; left:64vw; transition: 0.5s; opacity:1 `;
+      $bubble2.style.cssText = `   width: 7vh;
+    height: 7vh; top:28vh; left:64vw; transition: 0.5s; opacity:0 `;
+      $bubble3.style.cssText = `   width: 7vh;
+    height: 7vh; top:28vh; left:64vw; transition: 0.5s; opacity:0 `;
+      $bubble3sub.style.cssText = ` opacity: 0`;
+      $bubble3sub2.style.cssText = ` opacity: 0`;
+    }
+  }
+  if (matchMedia("screen and (max-width:450px)").matches) {
+    if (scrollTop >= 0 && scrollTop < ht * 1) {
       $bubble1.style.cssText = `  width: 30vw;
       height: 30vw; top: 14vh;
           left: 10vw; transition: 0.5s;`;
@@ -225,9 +255,8 @@ window.addEventListener("scroll", function (e) {
       $bubble3sub2.style.cssText = ` opacity: 0`;
     }
     if (scrollTop >= ht * 1 && scrollTop < ht * 2) {
-      // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
-      $bubble1.style.cssText = `  width: 10vh;
-          height: 10vh; top:25vh; left:65vw; transition: 0.5s; opacity:1 `;
+      $bubble1.style.cssText = `  width: 7vh;
+          height: 7vh; top:29vh; left:66vw; transition: 0.5s; opacity:1 `;
       $bubble2.style.cssText = `   width: 10vh;
       height: 10vh; top:25vh; left:65vw; transition: 0.5s; opacity:0 `;
       $bubble3.style.cssText = `   width: 10vh;
@@ -236,7 +265,6 @@ window.addEventListener("scroll", function (e) {
       $bubble3sub2.style.cssText = ` opacity: 0`;
     }
     if (scrollTop >= ht * 2 && scrollTop < ht * 3) {
-      // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
       $bubble1.style.cssText = ` width: 10vh;
       height: 10vh; top:7vh; left:45vw; transition: 0.5s; opacity:0 `;
       $bubble2.style.cssText = `  width: 10vh;
@@ -245,17 +273,6 @@ window.addEventListener("scroll", function (e) {
       height: 10vh; top:7vh; left:45vw; transition: 0.5s; opacity:0 `;
       $bubble3sub.style.cssText = ` opacity: 0`;
       $bubble3sub2.style.cssText = ` opacity: 0`;
-    }
-    if (scrollTop >= ht * 3 && scrollTop < ht * 4) {
-      // $moveBubble.style.cssText = `top:calc(50vh - 5vw); left:calc(50vw - 5vw); transition: 0.5s;`;
-      $bubble1.style.cssText = `  width: 20vw;
-          height: 20vw; top:10vh; left:5.5vw; transition: 0.5s; opacity:0 `;
-      $bubble2.style.cssText = `  width: 8vw;
-          height: 8vw; top:10vh; left:5.5vw; transition: 0.5s; opacity:0 `;
-      $bubble3.style.cssText = `  width: 25vh;
-          height: 25vh; top:18vh; left:calc(50vw - 12.5vh); transition: 0.5s; opacity:1 `;
-      $bubble3sub.style.cssText = ` top:0vh; left:0vw; transition: 0.5s; opacity:0.6`;
-      $bubble3sub2.style.cssText = ` top:0vh; left:0vw; transition: 0.5s; opacity:0.6`;
     }
   }
 
