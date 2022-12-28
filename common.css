@@ -1548,13 +1548,7 @@ footer p {
   }
 }
 
-header,
-.moveBubble,
-.gotop,
-.sec {
-  /* display: none; */
-}
 #sec1 {
   animation: open 4s forwards;
-  display: none;
+  /* display: none; */
 }
